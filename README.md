@@ -1,8 +1,15 @@
 # CV – LaTeX Build
 
+## Clone
+
+```bash
+git clone https://github.com/mgiurato/one-page-cv.git
+cd one-page-cv
+```
+
 ## Prerequisites
 
-Install a LaTeX distribution with `xelatex` and `biber` available in your PATH:
+Install a LaTeX distribution with `xelatex` available in your PATH:
 
 - **Windows**: [MiKTeX](https://miktex.org/) or [TeX Live](https://tug.org/texlive/)
 - **macOS**: [MacTeX](https://www.tug.org/mactex/)
@@ -12,12 +19,11 @@ Verify the installation:
 
 ```bash
 xelatex --version
-biber --version
 ```
 
 ## Build
 
-Generates `main.pdf` by running the full compilation sequence (`xelatex` → `biber` → `xelatex` → `xelatex`):
+Generates `main.pdf` by running the full compilation sequence (`xelatex` → `xelatex`):
 
 ```bash
 python build.py
